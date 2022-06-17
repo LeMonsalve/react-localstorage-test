@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/react-tasksapp-localstorage/static/css/main.05b4401f.css",
-    "main.js": "/react-tasksapp-localstorage/static/js/main.78e532de.js",
-    "index.html": "/react-tasksapp-localstorage/index.html",
-    "main.05b4401f.css.map": "/react-tasksapp-localstorage/static/css/main.05b4401f.css.map",
-    "main.78e532de.js.map": "/react-tasksapp-localstorage/static/js/main.78e532de.js.map"
+    "main.css": "/react-localstorage-test/static/css/main.05b4401f.css",
+    "main.js": "/react-localstorage-test/static/js/main.78e532de.js",
+    "index.html": "/react-localstorage-test/index.html",
+    "main.05b4401f.css.map": "/react-localstorage-test/static/css/main.05b4401f.css.map",
+    "main.78e532de.js.map": "/react-localstorage-test/static/js/main.78e532de.js.map"
   },
   "entrypoints": [
     "static/css/main.05b4401f.css",
