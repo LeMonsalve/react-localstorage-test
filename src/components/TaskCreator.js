@@ -23,7 +23,7 @@ export const TaskCreator = (props) => {
         />
       </div>
       <div className="col-3 p-0 d-flex align-items-center">
-        <button className="btn btn-primary" type="submit">
+        <button className="btn btn-primary" type="submit" disabled={!newTaskName.trim()}>
           Save Task
         </button>
       </div>

@@ -21,7 +21,9 @@ function App() {
 
   useEffect( () => {
 
-    setHaveItems( taskItems.length > 0 )
+    const tasksDone = taskItems.filter( t => t.done )
+
+    setHaveItems(tasksDone.length > 0)
 
     localStorage.setItem('tasks', JSON.stringify(taskItems))
 
