@@ -1,4 +1,4 @@
-export const VisibilityControl = ({setShowCompleted, cleanTask, isChecked}) => {
+export const VisibilityControl = ({setShowCompleted, cleanTask, isChecked, haveItems}) => {
 
   const handleDelete = () => {
     if (window.confirm("Are you sure you want to delete it?")) {
@@ -15,7 +15,7 @@ export const VisibilityControl = ({setShowCompleted, cleanTask, isChecked}) => {
       </div>
 
       { isChecked && (
-        <button className="btn btn-danger btn-sm" onClick={handleDelete}>Clear</button>
+        <button className="btn btn-danger btn-sm" onClick={handleDelete} disabled={!haveItems}>Clear</button>
       )}
     </div>
   )

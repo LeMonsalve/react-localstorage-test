@@ -9,6 +9,7 @@ function App() {
 
   const [taskItems, setTaskItems] = useState([])
   const [showCompleted, setShowCompleted] = useState(false)
+  const [haveItems, setHaveItems] = useState(false)
 
   useEffect(() => {
     let data = localStorage.getItem('tasks')
@@ -19,6 +20,8 @@ function App() {
   }, [])
 
   useEffect( () => {
+
+    setHaveItems( taskItems.length > 0 )
 
     localStorage.setItem('tasks', JSON.stringify(taskItems))
 
@@ -54,6 +57,7 @@ function App() {
 
         <VisibilityControl setShowCompleted={(checked) => setShowCompleted(checked)}
                            cleanTask={cleanTasks}
+                           haveItems={haveItems}
                            isChecked={showCompleted} />
 
         { showCompleted && (
